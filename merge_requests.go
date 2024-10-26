@@ -208,7 +208,7 @@ type ListMergeRequestsOptions struct {
 	ApproverIDs            *ApproverIDsValue `url:"approver_ids,omitempty" json:"approver_ids,omitempty"`
 	ApprovedByIDs          *ApproverIDsValue `url:"approved_by_ids,omitempty" json:"approved_by_ids,omitempty"`
 	ReviewerID             *ReviewerIDValue  `url:"reviewer_id,omitempty" json:"reviewer_id,omitempty"`
-	ReviewerUsername       *string           `url:"reviewer_username,omitempty" json:"reviewer_username,omitempty"`
+	ReviewerUsername       []string          `url:"reviewer_username,omitempty" json:"reviewer_username,omitempty"`
 	MyReactionEmoji        *string           `url:"my_reaction_emoji,omitempty" json:"my_reaction_emoji,omitempty"`
 	SourceBranch           *string           `url:"source_branch,omitempty" json:"source_branch,omitempty"`
 	TargetBranch           *string           `url:"target_branch,omitempty" json:"target_branch,omitempty"`
@@ -269,7 +269,7 @@ type ListProjectMergeRequestsOptions struct {
 	ApproverIDs            *ApproverIDsValue `url:"approver_ids,omitempty" json:"approver_ids,omitempty"`
 	ApprovedByIDs          *ApproverIDsValue `url:"approved_by_ids,omitempty" json:"approved_by_ids,omitempty"`
 	ReviewerID             *ReviewerIDValue  `url:"reviewer_id,omitempty" json:"reviewer_id,omitempty"`
-	ReviewerUsername       *string           `url:"reviewer_username,omitempty" json:"reviewer_username,omitempty"`
+	ReviewerUsername       []string          `url:"reviewer_username,omitempty" json:"reviewer_username,omitempty"`
 	MyReactionEmoji        *string           `url:"my_reaction_emoji,omitempty" json:"my_reaction_emoji,omitempty"`
 	SourceBranch           *string           `url:"source_branch,omitempty" json:"source_branch,omitempty"`
 	TargetBranch           *string           `url:"target_branch,omitempty" json:"target_branch,omitempty"`
@@ -331,7 +331,7 @@ type ListGroupMergeRequestsOptions struct {
 	ApproverIDs            *ApproverIDsValue `url:"approver_ids,omitempty" json:"approver_ids,omitempty"`
 	ApprovedByIDs          *ApproverIDsValue `url:"approved_by_ids,omitempty" json:"approved_by_ids,omitempty"`
 	ReviewerID             *ReviewerIDValue  `url:"reviewer_id,omitempty" json:"reviewer_id,omitempty"`
-	ReviewerUsername       *string           `url:"reviewer_username,omitempty" json:"reviewer_username,omitempty"`
+	ReviewerUsername       []string          `url:"reviewer_username,omitempty" json:"reviewer_username,omitempty"`
 	MyReactionEmoji        *string           `url:"my_reaction_emoji,omitempty" json:"my_reaction_emoji,omitempty"`
 	SourceBranch           *string           `url:"source_branch,omitempty" json:"source_branch,omitempty"`
 	TargetBranch           *string           `url:"target_branch,omitempty" json:"target_branch,omitempty"`
